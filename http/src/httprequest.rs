@@ -89,7 +89,6 @@ impl From<String> for HttpRequest {
                 let (key, value) = process_header_line(line);
                 parsed_headers.insert(key, value);
             } else if line.len() == 0 {
-
             } else {
                 parsed_msg_body = line;
             }
